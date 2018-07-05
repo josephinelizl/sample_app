@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 	#get '/signup', to: 'users#show'
 	
 	resources :users
+	resources :account_activations, only: [:edit]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
 end
